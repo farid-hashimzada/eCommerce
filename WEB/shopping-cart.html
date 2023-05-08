@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eCommerce</title>
+    <link rel="stylesheet" href="../style.css">
+    <!--font-awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--google font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--google-font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="hed">
+        <div class="container">
+            <div class="header">
+                <div class="hed-left">
+                    <p>NorthStar</p>
+                </div>
+
+                <div class="hed-midle">
+                    <a href="#" class="header-active">HOME</a>
+                    <a href="http://127.0.0.1:5500/WEB/about.html#">ABOUT</a>
+                    <a href="http://127.0.0.1:5500/WEB/contact.html">CONTACT US</a>
+                </div>
+
+                <div class="hed-rigth">
+                    <i class="fa-regular fa-user"></i>
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="shopping-card">
+        <div class="container">
+            <div class="shopping-info">
+                <div class="shopping-one">
+                    <div class="info1">
+                        <p>Product</p>
+                    </div>
+
+                    <div class="info1">
+                        <p>Price</p>
+                    </div>
+
+                    <div class="info1">
+                        <p>Quantity</p>
+                    </div>
+
+                    <div class="info1">
+                        <p>Total</p>
+                    </div>
+
+                </div>
+                <div class="shopping-two" >
+                    <div class="info2">
+                        <i class="material-icons">
+                            clear
+                        </i>
+                        <p>Plain White Shirt</p>
+                    </div>
+
+                    <div class="info2">
+                        <p>$59.00</p>
+                    </div>
+
+                    <div class="info2">
+                        <button>1</button>
+                    </div>
+
+                    <div class="info2">
+                        <p>$59.00</p>
+                    </div>
+
+                </div>
+            </div>
+
+    </section>
+    <script>
+        const getData = e => {
+            fetch("http://localhost:3000/products").then(res => {
+                if (res.statusText === 'OK') return res.json()
+            }).then(data => {
+                getTable(data);
+            })
+        }
+        getData()
+
+        const getTable = (data) => {
+            data.forEach(product => {
+                let tr = `<tr><td>${product.id}</td><td>${product.name}</td><td>${product.category}</td></tr>`                
+            tbody.innerHTML += tr;
+            });
+        }
+       
+       </script>
+</body>
