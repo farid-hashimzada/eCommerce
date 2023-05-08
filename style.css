@@ -1,0 +1,746 @@
+* {
+    /* margspace-between: 0; */
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+/*eCommerce index page start*/
+
+.container {
+    max-width: 1236px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.header-active {
+    color: #024E82 !important;
+}
+
+.hed {
+    background: #FFFFFF;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.hed-left p {
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 43px;
+}
+
+
+.hed-midle {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    max-width: 300px;
+    width: 100%;
+}
+
+.hed-midle a {
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 14px;
+    color: #000000;
+}
+
+.hed-rigth {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+
+.hed-rigth i {
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.navbar {
+    background-image: url('./imgs/navImg.png');
+    background-repeat: no-repeat;
+    height: calc(100vh - 113px);
+    /*important*/
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.nav-content {
+    position: absolute;
+    right: 10%;
+    top: 40%;
+    transform: translate(-60, -60);
+}
+
+
+.nav-content p {
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 48px;
+    color: #FFFFFF;
+    max-width: 470px;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 50px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.nav-text {
+    position: absolute;
+    right: 13%;
+    transform: translate(-43%);
+    border: 5px solid #FFFFFF;
+    padding: 10px;
+    max-width: 175px;
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+}
+
+.nav-text span {
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 22px;
+    color: #FFFFFF;
+}
+
+.discover {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.discover-content {
+    text-align: center;
+    padding-top: 50px;
+}
+
+
+.discover-content h2 {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 48px;
+    color: #1D1D1D;
+}
+
+
+.discover-content p {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 48px;
+    color: #555555;
+    padding-bottom: 45px;
+}
+
+.discover-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.discover-cards .card img {
+    max-width: 285px;
+    width: 100%;
+}
+
+.card-content {
+    text-align: center;
+    padding-top: 16px;
+}
+
+.card-content h4 {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 25px;
+    color: #1D1D1D;
+}
+
+
+.card-content span {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #024E82;
+}
+
+
+.about-card {
+    display: flex;
+    padding-top: 50px;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.about-card .container {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 50px;
+}
+
+.ac-1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-icon {
+    display: flex;
+    gap: 15px;
+    padding-bottom: 10px;
+    align-items: center;
+}
+
+.ac1-about {
+    max-width: 199px;
+    width: 100%;
+}
+
+
+.ac1-about span {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #555555;
+}
+
+.ac-1 i {
+    color: #024E82;
+}
+
+.ac-1 p {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 25px;
+    color: #1D1D1D;
+}
+
+
+.black-card .container {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 50px;
+}
+
+.black-one {
+    max-width: 715px;
+    width: 100%;
+    background: #000000;
+    height: 329px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 24px;
+    margin-top: 50px;
+}
+
+.black-one h3 {
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 48px;
+    color: #FFFFFF;
+}
+
+
+.black-one p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 130%;
+    color: #FFFFFF;
+    max-width: 406px;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.black-button {
+    max-width: 100px;
+    width: 100%;
+    background: #FFFFFF;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.04);
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+
+.black-button span {
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #024E82;
+    cursor: pointer;
+}
+
+.balck-two {
+    max-width: 505px;
+    width: 100%;
+    background: #000000;
+    height: 329px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 24px;
+    margin-top: 50px;
+}
+
+
+.balck-two h3 {
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 48px;
+    color: #FFFFFF;
+}
+
+.balck-two p {
+    max-width: 406px;
+    width: 100%;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 130%;
+    color: #FFFFFF;
+    margin: 0 auto;
+}
+
+.top-sellers h2 {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 48px;
+    color: #1D1D1D;
+    text-align: center;
+    padding-top: 50px;
+}
+
+
+.top-sellers p {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 48px;
+    color: #555555;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.sellers-card .container .card-box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.sellers-card .container .card-box .card img {
+    max-width: 294px;
+    width: 100%;
+}
+
+.sellers-content {
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.sellers-card .container .sellers-bottom {
+    max-width: 150px;
+    width: 100%;
+    padding: 10px 30px;
+    background: #024E82;
+    color: #FFFFFF;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+.sellers-card .container .sellers-bottom span {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer {
+    background: #FBFBFB;
+    margin-top: 60px ;
+}
+
+.footer .container .footer-top {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 50px;
+}
+
+.company {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 50px;
+}
+
+.company h4 {
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 14px;
+    color: #1D1D1D;
+    padding-bottom: 20px;
+}
+
+.company p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: #1D1D1D;
+    cursor: pointer;
+}
+
+.company input {
+    padding: 10px;
+    border: none;
+    font-size: 16px;
+    font-weight: 500;
+    border-bottom: 2px solid #000;
+    outline: none;
+}
+
+.email-contact i {
+    cursor: pointer;
+}
+
+
+.company input::placeholder {
+    color: #9c4848;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #000000;
+    padding-bottom: 30px;
+}
+
+h4 {
+    margin: 10px;
+}
+
+.footer-bottom .north p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 28px;
+    color: #1D1D1D;
+    padding-top: 32px;
+}
+
+.footer-bottom .pay span {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 28px;
+    color: #1D1D1D;
+}
+
+
+
+.footer-bottom .pay {
+    display: flex;
+    gap: 20px;
+}
+
+
+.footer-bottom .pay img {
+    cursor: pointer;
+}
+
+.company h4 {
+    margin: 0;
+}
+
+.company {
+    margin: 0 !important;
+}
+
+/*eCommerce index page end*/
+
+
+/*eCommerce about page start*/
+
+.about-navbar {
+    background-image: url('./imgs/aboutNavbar.png');
+    background-repeat: no-repeat;
+    height: 50vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.about-navbar .an-content {
+    display: flex;
+    position: absolute;
+    bottom: 20px;
+    left: 30px;
+}
+
+
+.about-navbar .an-content p {
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 48px;
+    color: #FFFFFF;
+}
+
+.second-navbar {
+    background: #FBFBFB;
+}
+
+.two-card {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding-top: 30px;
+}
+
+.card-One {
+    position: relative;
+}
+
+.card-One img {
+    max-width: 595px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.card-One .co-context {
+    position: absolute;
+    bottom: 37px;
+    color: #FFFFFF;
+    width: 100%;
+    text-align: center;
+}
+
+
+.card-One .co-context p {
+    background: #FFFFFF;
+    padding: 20px;
+    max-width: 196px;
+    width: 100%;
+    margin: 0 auto;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 20px;
+    color: #14517B;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.Founders .container h2 {
+    text-align: center;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 48px;
+    color: #1D1D1D;
+    padding: 50px 0;
+}
+
+.Founders {
+    background: #FBFBFB;
+    margin-bottom: 50px;
+}
+
+
+.founders-card {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+figure {
+    margin: 0;
+}
+
+.founders-card figure img {
+    max-width: 285px;
+    width: 100%;
+}
+
+
+.founders-card figure figcaption h3 {
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 24px;
+    color: #1D1D1D;
+}
+
+.testimonials {
+    padding: 60px 0;
+}
+
+.testimonials .container {
+    display: flex;
+    flex-direction: column;
+    gap: 90px;
+    justify-content: center;
+    align-items: center;
+}
+
+.testimonials .container .testimonials-box {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.testimo-img img {
+    object-fit: cover;
+}
+
+.testimo-content i {
+    font-size: 40px;
+}
+
+.testimo-content p {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 36px;
+    color: #555555;
+    max-width: 663px;
+    width: 100%;
+}
+
+.testimo-content span {
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 24px;
+    color: #1D1D1D;
+}
+
+
+/*eCommerce about page end*/
+
+/*eCommerce contact page start*/
+
+.contact-navbar {
+    background-image: url('./imgs/contact.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 50vh;
+    position: relative;
+}
+
+
+.contact-navbar .cn-content {
+    position: absolute;
+    bottom: 30px;
+    left: 40px;
+}
+
+.contact-navbar .cn-content p {
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 48px;
+}
+
+.contact-form .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-form .container .form-left h2 {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 48px;
+    color: #3A3939;
+}
+
+.form-left p {
+    max-width: 768px;
+    width: 100%;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #555555;
+}
+
+
+.form-left .form {
+    display: flex;
+    max-width: 820px;
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.form-left .frm p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #555555;
+}
+
+.form-left .frm input {
+    max-width: 400px;
+    width: 400px;
+    height: 50px;
+    padding: 10px;
+}
+
+.form-left .textarea p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #555555;
+    padding-top: 20px;
+}
+
+.form-left .textarea textarea {
+    max-width: 820px;
+    width: 820px;
+    font-weight: 600;
+    font-size: 16px;
+    min-height: 188px;
+    color: #555555;
+    resize: none;
+}
+
+.form-left .form-btn button {
+    margin-top: 20px;
+    max-width: 170px;
+    width: 100%;
+    padding: 10px;
+    background: #024E82;
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    margin-bottom: 50px;
+}
+
+.form-rigth {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.form-rigth .rigth-one h2 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 48px;
+    color: #1D1D1D;
+}
+
+
+.form-rigth .rigth-one p {
+    max-width: 300px;
+    width: 100%;
+}
+
+
+/*eCommerce contact page end*/
