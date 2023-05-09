@@ -34,70 +34,78 @@
                 </div>
 
                 <div class="hed-rigth">
-                    <a href="#"><i class="fa-regular fa-user"></i></a> 
-                    <a href="#"><i class="fa-solid fa-bag-shopping"></i></a> 
+                    <i class="fa-regular fa-user"></i>
+                    <i class="fa-solid fa-bag-shopping"></i>
                     <i class="fa-solid fa-bars"></i>
-                 </div>
+                </div>
             </div>
         </div>
     </header>
 
-    <section class="shopping-card">
+    <section class="billing-details">
         <div class="container">
-            <div class="shopping-info">
-              <table>
-                <tr>
-                    <td>Product</td>
-                    <td>Price</td>
-                    <td>Quantity</td>
-                    <td>Total</td>
-                </tr>
-
-                <tr>
-                    <i class="material-icons">
-                        clear
-                        </i>
-                    <td>Plain White Shirt</td>
-                    <td>$59.00</td>
-                    <td>1</td>
-                    <td>$59.00</td>
-                </tr>
-              </table>
-               
+            <h2>Billing details</h2>
+            <div class="form">
+                <form action="#">
+                    <label for="id">
+                        <p>Full Name*</p>
+                        <input type="text" placeholder="Farid hashimzade">
+                    </label>
+                    <label for="id">
+                        <p>Street address*</p>
+                        <input type="text" placeholder="House number and street name">
+                    </label>
+                    <label for="id">
+                        <p>Town / City*</p>
+                        <input type="text">
+                    </label>
+                    <label for="id">
+                        <p>Phone*</p>
+                        <input type="text">
+                    </label>
+                    <label for="id">
+                        <p>Email address*</p>
+                        <input type="email">
+                    </label>
+                </form>
             </div>
+        </div>
     </section>
 
-    <section class="card-totals">
+    <section class="orders">
         <div class="container">
-            <h2>Cart Totals</h2>
-            <div class="totals">
-                <div class="totals-one">
-                    <div class="context">
-                        <p>Subtotal</p>
-                    </div>
-                    <div class="totals-price">
-                        <p>$59.00</p>
-                    </div>
-                </div>
-                <div class="totals-one">
-                    <div class="context">
-                        <p>Shipping Free</p>
-                    </div>
-                    <div class="totals-price">
-                        <p>FREE!!!</p>
-                    </div>
-                </div>
-                <div class="totals-one">
-                    <div class="context">
-                        <p style="font-weight: 700;">Total</p>
-                    </div>
-                    <div class="totals-price">
-                        <p style="font-weight:500" >$59.00</p>
-                    </div>
-                </div>
+            <h2>Your order</h2>
+            <table>
+                <tbody>
+                    <tr>
+                        <td>Product</td>
+                        <td>Total</td>
+                    </tr>
+                    <tr>
+                        <td>Plain White Shirt</td>
+                        <td>$59.00</td>
+                    </tr>
+                    <tr>
+                        <td>Subtotal</td>
+                        <td>$59.00</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>$118.00</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <section class="place-order">
+        <div class="container">
+            <div class="in-order">
+                <p>Cash on delivery. Please contact us if you require assistance
+                    or wish to make alternate arrangements.</p>
             </div>
-            <div class="total-btn">
-                <p>Proceed to Checkout</p>
+            <div class="placeOrder-btn">
+                <p>place order</p>
             </div>
         </div>
     </section>
@@ -160,22 +168,4 @@
             </div>
         </div>
     </footer>
-    <script>
-        const getData = e => {
-            fetch("http://localhost:3000/products").then(res => {
-                if (res.statusText === 'OK') return res.json()
-            }).then(data => {
-                getTable(data);
-            })
-        }
-        getData()
-
-        const getTable = (data) => {
-            data.forEach(product => {
-                let tr = `<tr><td>${product.id}</td><td>${product.name}</td><td>${product.category}</td></tr>`                
-            tbody.innerHTML += tr;
-            });
-        }
-       
-       </script>
 </body>
