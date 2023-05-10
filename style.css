@@ -653,6 +653,7 @@ figure {
 .contact-form .container {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .contact-form .container .form-left h2 {
