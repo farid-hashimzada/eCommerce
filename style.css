@@ -27,12 +27,16 @@
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+    padding: 30px;
 }
 
-.hed-left p {
+.hed-left a {
     font-weight: 400;
     font-size: 36px;
     line-height: 43px;
+    text-decoration: none;
+    cursor: pointer;
+    color: #000;
 }
 
 
@@ -144,23 +148,38 @@
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
+    position: relative;
 }
 
 .discover-cards .card img {
     max-width: 285px;
     width: 100%;
+    border-radius: 10px;
 }
 
 .card-content {
     text-align: center;
     padding-top: 16px;
+    background: #024E82;
+    color: #FFFFFF;
+    border-radius: 0 0 10px 10px;
+    margin-top: -20px;
+    cursor: pointer;
 }
 
 .card-content h4 {
     font-weight: 400;
     font-size: 16px;
     line-height: 25px;
-    color: #1D1D1D;
+    color: #FFFFFF;
+    padding: 20px;
+    position: absolute;
+    left: 0;
+    bottom: -25px;
+    border-radius: 0 0 10px 10px;
+    background: #024E82;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 
@@ -168,7 +187,13 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 19px;
-    color: #024E82;
+    color: #FFFFFF;
+    position: absolute;
+    background: #024E82;
+    border-top-left-radius: 10px;
+    padding: 10px;
+    top: 0;
+    left: 0;
 }
 
 
@@ -427,9 +452,9 @@
     padding-bottom: 30px;
 }
 
-h4 {
+/* h4 {
     margin: 10px;
-}
+} */
 
 .footer-bottom .north p {
     font-weight: 400;
@@ -526,9 +551,9 @@ h4 {
 }
 
 
-.card-One .co-context p {
+.card-One .co-context a {
     background: #FFFFFF;
-    padding: 20px;
+    padding: 15px;
     max-width: 196px;
     width: 100%;
     margin: 0 auto;
@@ -539,6 +564,7 @@ h4 {
     color: #14517B;
     cursor: pointer;
     border-radius: 10px;
+    text-decoration: none;
 }
 
 .Founders .container h2 {
@@ -768,6 +794,7 @@ figure {
     width: 100%;
     object-fit: cover;
     max-height: 620px;
+    border-radius: 10px;
 }
 
 .card-discount {
@@ -1088,4 +1115,66 @@ figure {
     padding: 15px;
     cursor: pointer;
 }
+
 /*building details end*/
+
+
+/*productModal start*/
+
+.productModal {
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, .6);
+    top: 0;
+    display: flex;
+    align-items: center;
+    left: 0;
+    position: fixed;
+    z-index: 2;
+}
+
+
+
+.productModal .container .modal-box {
+    max-width: 1050px;
+    width: 100%;
+    background: #FBFBFB;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    border-radius: 20px;
+}
+
+.productModal .container .modal-rigth img {
+    margin: 50px 0 0 10px;
+    border-radius: 10px;
+    height: 400px;
+}
+
+.modal-left .card-about h2 {
+    font-size: 30px;
+}
+
+.productModal .container .modal-box .modal-rigth {
+    background: #EBEBEB;
+    padding: 50px;
+    border-radius: 20px 0 0 20px;
+}
+
+.modal-left .cardAbout-content p {
+    max-width: 550px;
+    width: 100%;
+}
+
+.modal-left {
+    position: relative;
+}
+
+.modal-left .card-about .modal-delete i {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    cursor: pointer;
+}
+
+/*productModal end*/

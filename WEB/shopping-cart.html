@@ -24,7 +24,7 @@
         <div class="container">
             <div class="header">
                 <div class="hed-left">
-                    <p>NorthStar</p>
+                    <a href="http://127.0.0.1:5500/WEB/index.html#">NorthStar</a>
                 </div>
 
                 <div class="hed-midle">
@@ -34,10 +34,10 @@
                 </div>
 
                 <div class="hed-rigth">
-                    <a href="#"><i class="fa-regular fa-user"></i></a> 
-                    <a href="#"><i class="fa-solid fa-bag-shopping"></i></a> 
+                    <a href="#"><i class="fa-regular fa-user"></i></a>
+                    <a href="#"><i class="fa-solid fa-bag-shopping"></i></a>
                     <i class="fa-solid fa-bars"></i>
-                 </div>
+                </div>
             </div>
         </div>
     </header>
@@ -45,25 +45,25 @@
     <section class="shopping-card">
         <div class="container">
             <div class="shopping-info">
-              <table>
-                <tr>
-                    <td>Product</td>
-                    <td>Price</td>
-                    <td>Quantity</td>
-                    <td>Total</td>
-                </tr>
+                <table>
+                    <tr>
+                        <td>Product</td>
+                        <td>Price</td>
+                        <td>Quantity</td>
+                        <td>Total</td>
+                    </tr>
 
-                <tr>
-                    <i class="material-icons">
-                        clear
+                    <tr>
+                        <i class="material-icons">
+                            clear
                         </i>
-                    <td>Plain White Shirt</td>
-                    <td>$59.00</td>
-                    <td>1</td>
-                    <td>$59.00</td>
-                </tr>
-              </table>
-               
+                        <td>Plain White Shirt</td>
+                        <td>$59.00</td>
+                        <td>1</td>
+                        <td>$59.00</td>
+                    </tr>
+                </table>
+
             </div>
     </section>
 
@@ -92,7 +92,7 @@
                         <p style="font-weight: 700;">Total</p>
                     </div>
                     <div class="totals-price">
-                        <p style="font-weight:500" >$59.00</p>
+                        <p style="font-weight:500">$59.00</p>
                     </div>
                 </div>
             </div>
@@ -172,10 +172,10 @@
 
         const getTable = (data) => {
             data.forEach(product => {
-                let tr = `<tr><td>${product.id}</td><td>${product.name}</td><td>${product.category}</td></tr>`                
-            tbody.innerHTML += tr;
+                let tr = `<tr><td>${product.id}</td><td>${product.name}</td><td>${product.category}</td></tr>`
+                tbody.innerHTML += tr;
             });
         }
-       
-       </script>
+
+    </script>
 </body>

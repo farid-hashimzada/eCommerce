@@ -12,9 +12,7 @@
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!--google-font-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
 <body>
@@ -22,7 +20,7 @@
         <div class="container">
             <div class="header">
                 <div class="hed-left">
-                    <p>NorthStar</p>
+                    <a href="http://127.0.0.1:5500/WEB/index.html#">NorthStar</a>
                 </div>
 
                 <div class="hed-midle">
@@ -56,63 +54,8 @@
                 <p>Recently added shirts!</p>
             </div>
 
-            <div class="discover-cards">
-                <div class="card">
-                    <img src="../imgs/unsplash_KjRkxQ2NNXA.png" alt="girl">
-                    <div class="card-content">
-                        <h4>Plain White Shirt</h4>
-                        <span>$29.00</span>
-                    </div>
-                </div>
-                <!-- <div class="card">
-                    <img src="../imgs/Rectangle 1 (1).png" alt="girl">
-                    <div class="card-content">
-                        <h4>Plain White Shirt</h4>
-                        <span>$29.00</span>
-                    </div>
-                </div> -->
-                <!-- <div class="card">
-                    <img src="../imgs/Rectangle 1 (2).png" alt="girl">
-                    <div class="card-content">
-                        <h4>Plain White Shirt</h4>
-                        <span>$29.00</span>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="../imgs/Rectangle 1 (3).png" alt="girl">
-                    <div class="card-content">
-                        <h4>Plain White Shirt</h4>
-                        <span>$29.00</span>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="../imgs/Rectangle 1 (5).png" alt="girl">
-                    <div class="card-content">
-                        <h4>Plain White Shirt</h4>
-                        <span>$29.00</span>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="../imgs/Rectangle 1.png" alt="girl">
-                    <div class="card-content">
-                        <h4>Plain White Shirt</h4>
-                        <span>$29.00</span>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="../imgs/Rectangle 1.png" alt="girl">
-                    <div class="card-content">
-                        <h4>Plain White Shirt</h4>
-                        <span>$29.00</span>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="../imgs/Rectangle 1 (5).png" alt="girl">
-                    <div class="card-content">
-                        <h4>Plain White Shirt</h4>
-                        <span>$29.00</span>
-                    </div>
-                </div> -->
+            <div class="discover-cards" id="product">
+
             </div>
         </div>
 
@@ -295,6 +238,62 @@
             </div>
         </div>
     </footer>
+
+    <div class="productModal">
+        <div class="container">
+            <div class="modal-box">
+
+                <div class="modal-rigth">
+                    <img src="../imgs/Rectangle1.png" alt="product">
+                </div>
+                <div class="modal-left">
+                    <div class="card-about">
+                        <div class="modal-delete">
+                            <i class="material-icons">
+                                clear
+                            </i>
+                        </div>
+
+                        <h2>Plain White Shirt</h2>
+                        <div class="card-star">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <div class="card-price">
+                            <span><del>$69.00</del></span>
+                            <p>$59.00</p>
+                        </div>
+                        <div class="cardAbout-content">
+                            <p>A classic t-shirt never goes out of style.
+                                This is our most premium collection of shirt. This
+                                plain white shirt is made up of pure cotton and has a premium finish.</p>
+                        </div>
+
+                        <div class="card-select">
+                            <select name="name" id="card">
+                                <option value="name">Select size</option>
+                                <option value="name">Small S</option>
+                                <option value="name">Medium M</option>
+                                <option value="name">Large L</option>
+                                <option value="name">Extra Large XL</option>
+                            </select>
+                        </div>
+
+                        <div class="add-cart">
+                            <span>ADD TO CART</span>
+                            <P>Category: Women, Polo, Casual
+                                Tags: Modern, Design, cotton
+                            </P>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
 
     <script src="../app.js"></script>
 </body>

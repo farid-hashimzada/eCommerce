@@ -15,13 +15,14 @@ const getProducts = data => {
         let data = `
         <div class="discover-cards">
                 <div class="card">
-                    <img src="../imgs/unsplash_KjRkxQ2NNXA.png" alt="girl">
+                    <img src=${products.image}>
                     <div class="card-content">
-                        <h4>Plain White Shirt</h4>
-                        <span>$29.00</span>
+                        <h4>${products.description}</h4>
+                        <span>${products.price} ${products.currency}</span>
                     </div>
                 </div>
         </div>
         `
+        product.innerHTML += data;
     });
 }
