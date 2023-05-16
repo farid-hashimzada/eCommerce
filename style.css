@@ -149,6 +149,7 @@
     flex-wrap: wrap;
     gap: 20px;
     position: relative;
+    margin-bottom: 20px;
 }
 
 .discover-cards .card img {
@@ -167,7 +168,7 @@
     cursor: pointer;
 }
 
-.card-content h4 {
+.card-content a {
     font-weight: 400;
     font-size: 16px;
     line-height: 25px;
@@ -180,6 +181,7 @@
     background: #024E82;
     width: 100%;
     box-sizing: border-box;
+    text-decoration: none;
 }
 
 
@@ -1131,6 +1133,8 @@ figure {
     left: 0;
     position: fixed;
     z-index: 2;
+    display: none;
+    overflow-x: hidden;
 }
 
 
@@ -1164,6 +1168,7 @@ figure {
 .modal-left .cardAbout-content p {
     max-width: 550px;
     width: 100%;
+    padding-right: 20px;
 }
 
 .modal-left {
