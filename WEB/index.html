@@ -1,301 +1,302 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>eCommerce</title>
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../style.css" />
     <!--font-awesome-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <!--google-font-->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-</head>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
 
-<body>
+  <body>
     <header class="hed">
-        <div class="container">
-            <div class="header">
-                <div class="hed-left">
-                    <a href="http://127.0.0.1:5500/WEB/index.html#">NorthStar</a>
-                </div>
+      <div class="container">
+        <div class="header">
+          <div class="hed-left">
+            <a href="http://127.0.0.1:5500/WEB/index.html#">NorthStar</a>
+          </div>
 
-                <div class="hed-midle">
-                    <a href="#" class="header-active">HOME</a>
-                    <a href="http://127.0.0.1:5500/WEB/about.html#">ABOUT</a>
-                    <a href="http://127.0.0.1:5500/WEB/contact.html">CONTACT US</a>
-                </div>
+          <div class="hed-midle">
+            <a href="#" class="header-active">HOME</a>
+            <a href="/Web/about.html">ABOUT</a>
+            <a href="/WEB/contact.html">CONTACT US</a>
+          </div>
 
-                <div class="hed-rigth">
-                    <i class="fa-regular fa-user"></i>
-                    <i class="fa-solid fa-bag-shopping"></i>
-                    <i class="fa-solid fa-bars"></i>
-                </div>
-            </div>
+          <div class="hed-rigth">
+            <i class="fa-regular fa-user"></i>
+            <a href="shopping-cart.html" class="shoppingCartCount"
+              ><i class="fa-solid fa-bag-shopping"></i>
+              <span class="badge" id="productCount"></span>
+            </a>
+            <i class="fa-solid fa-bars"></i>
+          </div>
         </div>
+      </div>
     </header>
-    <section class="navbar">
-        <div class="nav-content">
-            <p>stylist picks beat The heat</p>
-            <div class="nav-text">
-                <span>SHOP NOW</span>
-            </div>
 
+    <div class="successAlert">Successfull!</div>
+    <div class="errorAlert">This product is already in the cart!</div>
+
+    <section class="navbar">
+      <div class="nav-content">
+        <p>stylist picks beat The heat</p>
+        <div class="nav-text">
+          <span>SHOP NOW</span>
         </div>
+      </div>
     </section>
 
     <section class="discover">
-        <div class="container">
-            <div class="discover-content">
-                <h2>Discover NEW Arrivals</h2>
-                <p>Recently added shirts!</p>
-            </div>
-
-            <div class="discover-cards" id="product">
-                <!--mneim serverim doldurur burani-->
-            </div>
+      <div class="container">
+        <div class="discover-content">
+          <h2>Discover NEW Arrivals</h2>
+          <p>Recently added shirts!</p>
         </div>
 
+        <div class="discover-cards" id="productsContainer">
+          <!--mneim serverim doldurur burani-->
+        </div>
+      </div>
     </section>
 
     <section class="about-card">
-        <div class="container">
-            <div class="ac-1">
-                <div class="card-icon">
-                    <i class="fa-solid fa-truck-fast"></i>
-                    <p>Free Shipping</p>
-                </div>
+      <div class="container">
+        <div class="ac-1">
+          <div class="card-icon">
+            <i class="fa-solid fa-truck-fast"></i>
+            <p>Free Shipping</p>
+          </div>
 
-                <div class="ac1-about">
-                    <span>Enjoy free shipping on all orders above $100</span>
-                </div>
-            </div>
-            <div class="ac-1">
-                <div class="card-icon">
-                    <i class="fa-sharp fa-solid fa-sun"></i>
-                    <p>SUPPORT 24/7</p>
-                </div>
-
-
-                <div class="ac1-about">
-                    <span>Our support team is there to help you for queries</span>
-                </div>
-
-            </div>
-            <div class="ac-1">
-                <div class="card-icon">
-                    <i class="fa-solid fa-arrow-rotate-left"></i>
-                    <p>30 DAYS RETURN</p>
-                </div>
-
-
-                <div class="ac1-about">
-                    <span>Simply return it within 30 days for an exchange.</span>
-                </div>
-            </div>
-            <div class="ac-1">
-                <div class="card-icon">
-                    <i class="fa-solid fa-fingerprint"></i>
-                    <p>100% PAYMENT SECURE</p>
-                </div>
-
-
-                <div class="ac1-about">
-                    <span>Our payments are secured with 256 bit encryption</span>
-                </div>
-            </div>
+          <div class="ac1-about">
+            <span>Enjoy free shipping on all orders above $100</span>
+          </div>
         </div>
+        <div class="ac-1">
+          <div class="card-icon">
+            <i class="fa-sharp fa-solid fa-sun"></i>
+            <p>SUPPORT 24/7</p>
+          </div>
+
+          <div class="ac1-about">
+            <span>Our support team is there to help you for queries</span>
+          </div>
+        </div>
+        <div class="ac-1">
+          <div class="card-icon">
+            <i class="fa-solid fa-arrow-rotate-left"></i>
+            <p>30 DAYS RETURN</p>
+          </div>
+
+          <div class="ac1-about">
+            <span>Simply return it within 30 days for an exchange.</span>
+          </div>
+        </div>
+        <div class="ac-1">
+          <div class="card-icon">
+            <i class="fa-solid fa-fingerprint"></i>
+            <p>100% PAYMENT SECURE</p>
+          </div>
+
+          <div class="ac1-about">
+            <span>Our payments are secured with 256 bit encryption</span>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section class="black-card">
-        <div class="container">
-            <div class="black-one">
-                <h3>peace of mind</h3>
-                <p>A one-stop platform for all your fashion needs,
-                    hassle-free. Buy with a peace of mind.</p>
-                <div class="black-button">
-                    <span>Buy now</span>
-                </div>
-            </div>
-
-            <div class="balck-two">
-                <h3>peace of mind</h3>
-                <p>A one-stop platform for all your fashion needs,
-                    hassle-free. Buy with a peace of mind.</p>
-                <div class="black-button">
-                    <span>Buy now</span>
-                </div>
-            </div>
+      <div class="container">
+        <div class="black-one">
+          <h3>peace of mind</h3>
+          <p>
+            A one-stop platform for all your fashion needs, hassle-free. Buy
+            with a peace of mind.
+          </p>
+          <div class="black-button">
+            <span>Buy now</span>
+          </div>
         </div>
+
+        <div class="balck-two">
+          <h3>peace of mind</h3>
+          <p>
+            A one-stop platform for all your fashion needs, hassle-free. Buy
+            with a peace of mind.
+          </p>
+          <div class="black-button">
+            <span>Buy now</span>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section class="top-sellers">
+      <div class="container">
+        <h2>Top Sellers</h2>
+        <p>Browse our top-selling products</p>
+      </div>
+
+      <div class="sellers-card">
         <div class="container">
-            <h2>Top Sellers</h2>
-            <p>Browse our top-selling products</p>
-        </div>
-
-        <div class="sellers-card">
-            <div class="container">
-                <div class="card-box">
-                    <div class="card">
-                        <img src="../imgs/boy.png" alt="girl">
-                        <div class="sellers-content">
-                            <h4>Gray Polo Shirt</h4>
-                            <span>$29.00</span>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img src="../imgs/boy.png" alt="girl">
-                        <div class="sellers-content">
-                            <h4>Gray Polo Shirt</h4>
-                            <span>$29.00</span>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img src="../imgs/boy.png" alt="girl">
-                        <div class="sellers-content">
-                            <h4>Gray Polo Shirt</h4>
-                            <span>$29.00</span>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img src="../imgs/boy.png" alt="girl">
-                        <div class="sellers-content">
-                            <h4>Gray Polo Shirt</h4>
-                            <span>$29.00</span>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="sellers-bottom">
-                    <span>shop now</span>
-                </div>
+          <div class="card-box">
+            <div class="card">
+              <img src="../imgs/boy.png" alt="girl" />
+              <div class="sellers-content">
+                <h4>Gray Polo Shirt</h4>
+                <span>$29.00</span>
+              </div>
             </div>
+            <div class="card">
+              <img src="../imgs/boy.png" alt="girl" />
+              <div class="sellers-content">
+                <h4>Gray Polo Shirt</h4>
+                <span>$29.00</span>
+              </div>
+            </div>
+            <div class="card">
+              <img src="../imgs/boy.png" alt="girl" />
+              <div class="sellers-content">
+                <h4>Gray Polo Shirt</h4>
+                <span>$29.00</span>
+              </div>
+            </div>
+            <div class="card">
+              <img src="../imgs/boy.png" alt="girl" />
+              <div class="sellers-content">
+                <h4>Gray Polo Shirt</h4>
+                <span>$29.00</span>
+              </div>
+            </div>
+          </div>
 
+          <div class="sellers-bottom">
+            <span>shop now</span>
+          </div>
         </div>
+      </div>
     </section>
 
     <footer class="footer">
-        <div class="container">
-            <div class="footer-top">
-                <div class="company">
-                    <h4>Company info</h4>
-                    <p>About Us</p>
-                    <p> Latest Posts</p>
-                    <p> Contact Us</p>
-                    <p> Shop</p>
-                </div>
+      <div class="container">
+        <div class="footer-top">
+          <div class="company">
+            <h4>Company info</h4>
+            <p>About Us</p>
+            <p>Latest Posts</p>
+            <p>Contact Us</p>
+            <p>Shop</p>
+          </div>
 
-                <div class="company">
-                    <h4>Tracking</h4>
-                    <p> Order Status</p>
-                    <p> Delivery </p>
-                    <p> Shipping Info</p>
-                    <p> FAQ</p>
-                </div>
+          <div class="company">
+            <h4>Tracking</h4>
+            <p>Order Status</p>
+            <p>Delivery</p>
+            <p>Shipping Info</p>
+            <p>FAQ</p>
+          </div>
 
-                <div class="company">
-                    <h4>useful links</h4>
-                    <p>Special Offers</p>
-                    <p> Gift Cards</p>
-                    <p> Advetising</p>
-                    <p> Terms of Use</p>
-                </div>
+          <div class="company">
+            <h4>useful links</h4>
+            <p>Special Offers</p>
+            <p>Gift Cards</p>
+            <p>Advetising</p>
+            <p>Terms of Use</p>
+          </div>
 
-                <div class="company">
-                    <h4>get in the know</h4>
+          <div class="company">
+            <h4>get in the know</h4>
 
-                    <div class="email-contact">
-                        <input type="email" placeholder="Enter email">
-                        <i class="fa-solid fa-arrow-right"></i>
-                    </div>
-
-                </div>
+            <div class="email-contact">
+              <input type="email" placeholder="Enter email" />
+              <i class="fa-solid fa-arrow-right"></i>
             </div>
-
-
-            <div class="footer-bottom">
-                <div class="north">
-                    <p>© 2020 NorthStar eCommerce</p>
-                    <div class="pay-content">
-                        <span>Privacy Policy |
-                            Terms & Conditions
-                        </span>
-                    </div>
-                </div>
-
-                <div class="pay">
-                    <img src="../imgs/visa.svg" alt="visa">
-                    <img src="../imgs/paypal.svg" alt="paypal">
-                    <img src="../imgs/Rectangle 14.svg" alt="pay">
-                    <img src="../imgs/visaElectron.svg" alt="visa">
-                </div>
-            </div>
+          </div>
         </div>
+
+        <div class="footer-bottom">
+          <div class="north">
+            <p>© 2020 NorthStar eCommerce</p>
+            <div class="pay-content">
+              <span>Privacy Policy | Terms & Conditions </span>
+            </div>
+          </div>
+
+          <div class="pay">
+            <img src="../imgs/visa.svg" alt="visa" />
+            <img src="../imgs/paypal.svg" alt="paypal" />
+            <img src="../imgs/Rectangle 14.svg" alt="pay" />
+            <img src="../imgs/visaElectron.svg" alt="visa" />
+          </div>
+        </div>
+      </div>
     </footer>
 
     <div class="productModal" id="ProductModal">
-        <div class="container">
-            <div class="modal-box">
+      <div class="container">
+        <div class="modal-box">
+          <div class="modal-rigth">
+            <img src="../imgs/Rectangle1.png" alt="product" id="productImage" />
+          </div>
+          <div class="modal-left">
+            <div class="card-about">
+              <div class="modal-delete">
+                <i class="material-icons" id="closeModal"> clear </i>
+              </div>
 
-                <div class="modal-rigth">
-                    <img src="../imgs/Rectangle1.png" alt="product" id="productImage">
-                </div>
-                <div class="modal-left">
-                    <div class="card-about">
-                        <div class="modal-delete">
-                            <i class="material-icons" id="closeModal">
-                                clear
-                            </i>
-                        </div>
+              <h2 id="productDescription"></h2>
+              <div class="card-star">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <div class="card-price">
+                <span><del class="totalPrice"></del></span>
+                <p class="discountedPrice"></p>
+              </div>
+              <div class="cardAbout-content">
+                <p class="aboutProduct"></p>
+              </div>
 
-                        <h2 id="productDescription">Plain White Shirt</h2>
-                        <div class="card-star">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                        </div>
-                        <div class="card-price">
-                            <span><del>$69.00</del></span>
-                            <p>$59.00</p>
-                        </div>
-                        <div class="cardAbout-content">
-                            <p>A classic t-shirt never goes out of style.
-                                This is our most premium collection of shirt. This
-                                plain white shirt is made up of pure cotton and has a premium finish.</p>
-                        </div>
+              <div class="card-select">
+                <select name="name" id="card">
+                  <option value="name">Select size</option>
+                  <option value="name">Small S</option>
+                  <option value="name">Medium M</option>
+                  <option value="name">Large L</option>
+                  <option value="name">Extra Large XL</option>
+                </select>
+              </div>
 
-                        <div class="card-select">
-                            <select name="name" id="card">
-                                <option value="name">Select size</option>
-                                <option value="name">Small S</option>
-                                <option value="name">Medium M</option>
-                                <option value="name">Large L</option>
-                                <option value="name">Extra Large XL</option>
-                            </select>
-                        </div>
-
-                        <div class="add-cart">
-                            <span id="addToCartButton">ADD TO CART</span>
-                            <P>Category: Women, Polo, Casual
-                                Tags: Modern, Design, cotton
-                            </P>
-                        </div>
-                    </div>
-                </div>
+              <div class="add-cart">
+                <span id="addToCartButton" class="addToCartButton"
+                  >ADD TO CART</span
+                >
+                <p>
+                  Category: Women, Polo, Casual Tags: Modern, Design, cotton
+                </p>
+              </div>
             </div>
-
+          </div>
         </div>
+      </div>
     </div>
 
-    <script src="../app.js"></script>
-</body>
-
+    <!-- <script src="../app.js"></script> -->
+    <script src="../index.js"></script>
+  </body>
 </html>
